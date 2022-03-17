@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/16 18:58:17 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/17 23:05:33 by myukang          ###   ########.fr       */
+/*   Created: 2022/03/17 23:02:39 by myukang           #+#    #+#             */
+/*   Updated: 2022/03/17 23:04:24 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+# ifndef FT_PRINTF
+# define FT_PRINTF
 
-int		ft_printf(const char *, ...)
-{
+#include <stdio.h>
+
+int		ft_printf(const char *, ...);
 
 
-}
 
-int main()
-{
-	char 	*str1;
-	int		num1;
-
-	num1 = 2147483648;
-	printf("%i\n", num1);
-
-	return (0);
-}
+# endif
