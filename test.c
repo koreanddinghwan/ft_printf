@@ -1,4 +1,4 @@
-#include "./printf/ft_printf.h"
+#include "./printf_srcs/ft_printf.h"
 #include <stdio.h>
 
 int	main()
@@ -121,5 +121,13 @@ printf("\n");
 	ft_printf("%% %c\n", c);
 
 ft_printf("%%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
+	printf("\n\n\nbonuspart\n");
+
+	num1 = 1234123;
+	printf("%-o\n", num1);
+	printf("%o\n", num1);
+
+
+
 	return (0);
 }

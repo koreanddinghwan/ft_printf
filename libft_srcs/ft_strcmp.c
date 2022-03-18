@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/17 23:52:09 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/19 01:05:23 by myukang          ###   ########.fr       */
+/*   Created: 2022/03/17 00:19:43 by myukang           #+#    #+#             */
+/*   Updated: 2022/03/17 00:28:44 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include "../libft/libft.h"
-# include <stdarg.h>
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	unsigned char	*uc1;
+	unsigned char	*uc2;
 
-int		ft_print_pointer(void *p);
-int		ft_putnbr_hex(int n, int big_small);
-int		ft_printf(const char *fmt, ...);
-
-#endif
+	uc1 = (unsigned char *)s1;
+	uc2 = (unsigned char *)s2;
+	while ((*uc1 == *uc2) && (*uc1 != '\0'))
+	{
+		uc1++;
+		uc2++;
+	}
+	return (*uc1 - *uc2);
+}
