@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 18:58:17 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/18 18:03:25 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/19 01:04:56 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int	ft_printf(const char *fmt, ...)
 		}
 		fmt++;
 		if (*fmt == 0)
-			return(rtn);
+			return (rtn);
 		rtn += ft_print_conv((char *)fmt, &ap);
 		fmt++;
 	}

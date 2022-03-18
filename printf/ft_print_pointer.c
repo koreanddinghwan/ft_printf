@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/18 04:09:13 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/18 06:13:25 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/19 01:05:13 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	ft_recur_pointer(unsigned long long p, int *rtn)
 {
-	char *hex;
+	char	*hex;
 
 	hex = "0123456789abcdef";
 	if (p > 15)
