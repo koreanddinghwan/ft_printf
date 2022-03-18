@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/18 00:43:51 by myukang           #+#    #+#              #
-#    Updated: 2022/03/18 04:18:28 by myukang          ###   ########.fr        #
+#    Updated: 2022/03/18 06:27:25 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ LIBFT_O = $(LIBFT_SRCS:.c=.o)
 LIBFT_OBJS = $(addprefix $(LIBFT_DIR), $(LIBFT_O))
 
 #PRINTF
-SRCS_DIR = ./ft_printf/
+SRCS_DIR = ./printf/
 SRCS_C = ft_printf.c ft_putnbr_hex.c ft_print_pointer.c
 OBJS_O = $(SRCS_C:.c=.o)
 SRCS = $(addprefix $(SRCS_DIR), $(SRCS_C)) 
@@ -44,7 +44,7 @@ $(NAME) : $(OBJ_FILES)
 	ar rsc $(NAME) $^
 
 %.o : %.c
-	$(CC) $(CFLAGS) $< -o $@ -I .
+	$(CC) $(CFLAGS) -g $< -o $@ -I .
 
 $(BONUS) : 
 	make BONUS_MADE=1 all

@@ -1,4 +1,4 @@
-#include "./ft_printf/ft_printf.h"
+#include "./printf/ft_printf.h"
 #include <stdio.h>
 
 int	main()
@@ -103,13 +103,23 @@ printf("\n");
 	printf("%d\n", n);
 
 	printf("\n");
-	n=printf("printf %%test###\n");
+	n=printf("%%printf %%test###\n");
 	printf("%d\n", n);
-	n=ft_printf("printf %%test###\n");
+	n=ft_printf("%%printf %%test###\n");
 	printf("%d\n", n);
 
-	printf("%0\n"); 
 
 
+	long l = 4414511232;
+	printf("%p\n", (void *)0 + 4444919938);
+	ft_printf("%p\n", (void *)0 + 4444919938);
+
+	printf("$$$$#####$#$#$#\n");
+	char c;
+	c = 'a';
+	ft_printf("%c\n", c);
+	ft_printf("%% %c\n", c);
+
+ft_printf("%%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
 	return (0);
 }
