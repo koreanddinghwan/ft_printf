@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/18 00:43:51 by myukang           #+#    #+#              #
-#    Updated: 2022/03/19 01:44:14 by myukang          ###   ########.fr        #
+#    Updated: 2022/03/25 20:06:27 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,7 @@ bonus :
 	make BONUS_MADE=1 all
 
 fclean : clean
-	rm -f $(NAME) $(LIBFT_OBJS) $(OBJS) $(BONUS_OBJS)
+	rm -f $(NAME)
 	BONUS_MADE=0
 
 clean :

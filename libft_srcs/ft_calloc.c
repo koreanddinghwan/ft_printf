@@ -6,16 +6,16 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:34:36 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/12 11:17:41 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/25 20:14:44 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(t_size_t count, t_size_t size)
 {
-	void	*p;
-	size_t	i;
+	void		*p;
+	t_size_t	i;
 
 	p = malloc(size * count);
 	if (!p)

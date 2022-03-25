@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 18:58:17 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/19 01:04:56 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/25 20:09:05 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,26 @@
 static int	ft_print_conv(char	*fmt, va_list *ap)
 {
 	int		rtn;
+	int		fd;
 
 	rtn = 0;
+	fd = 1;
 	if (*fmt == 'c')
-		rtn += ft_putchar_fd((char)va_arg(*ap, int), 1);
+		rtn += ft_putchar_fd((char)va_arg(*ap, int), fd);
 	else if (*fmt == 's')
-		rtn += ft_putstr_fd((char *)va_arg(*ap, char *), 1);
+		rtn += ft_putstr_fd((char *)va_arg(*ap, char *), fd);
 	else if (*fmt == 'p')
 		rtn += ft_print_pointer((void *)va_arg(*ap, void *));
 	else if ((*fmt == 'd') || (*fmt == 'i'))
-		rtn += ft_putnbr_fd((int)va_arg(*ap, int), 1);
+		rtn += ft_putnbr_fd((int)va_arg(*ap, int), fd);
 	else if (*fmt == 'u')
-		rtn += ft_putnbr_unsigned((unsigned int)va_arg(*ap, unsigned int), 1);
+		rtn += ft_putnbr_unsigned((unsigned int)va_arg(*ap, unsigned int), fd);
 	else if (*fmt == 'x')
 		rtn += ft_putnbr_hex((int)va_arg(*ap, int), -1);
 	else if (*fmt == 'X')
 		rtn += ft_putnbr_hex((int)va_arg(*ap, int), 1);
 	else if (*fmt == '%')
-		rtn += ft_putchar_fd('%', 1);
+		rtn += ft_putchar_fd('%', fd);
 	return (rtn);
 }
 

@@ -6,16 +6,16 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 16:14:44 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/12 15:03:32 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/25 20:14:28 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, t_size_t n)
 {
 	char	*p;
-	size_t	i;
+	t_size_t	i;
 
 	p = s;
 	i = 0;
