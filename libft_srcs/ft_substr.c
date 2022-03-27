@@ -6,16 +6,17 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:50:55 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/16 18:23:10 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:19:19 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, t_size_t len)
 {
-	char	*substr;
-	size_t	size;
+	char		*substr;
+	t_size_t	size;
 
 	if (!s)
 		return (0);

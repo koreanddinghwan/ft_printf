@@ -6,15 +6,15 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 15:24:39 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/12 15:23:56 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:13:40 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, t_size_t len)
 {
-	size_t			i;
+	t_size_t			i;
 	unsigned char	*d;
 
 	i = 0;

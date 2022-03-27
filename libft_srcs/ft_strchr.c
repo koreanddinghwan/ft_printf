@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 15:51:12 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/16 20:01:34 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:15:24 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strchr(const char *s, int c)
 {
 	char	*p;
-	size_t	size;
-	size_t	i;
+	t_size_t	size;
+	t_size_t	i;
 
 	p = 0;
 	i = 0;

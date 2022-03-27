@@ -6,15 +6,15 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 15:30:29 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/14 13:53:31 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:17:35 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(char *s1, char *s2, t_size_t n)
 {
-	size_t			i;
+	t_size_t		i;
 	unsigned char	*uc1;
 	unsigned char	*uc2;
 

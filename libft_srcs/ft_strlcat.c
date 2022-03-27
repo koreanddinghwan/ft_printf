@@ -6,13 +6,13 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 12:53:49 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/14 17:01:26 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:16:46 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_cat(char *dest, char *src, size_t s, size_t dsize)
+static void	ft_cat(char *dest, char *src, t_size_t s, t_size_t dsize)
 {
 	int	c;
 
@@ -22,11 +22,11 @@ static void	ft_cat(char *dest, char *src, size_t s, size_t dsize)
 	dest[dsize] = '\0';
 }
 
-size_t	ft_strlcat(char *dest, char *src, size_t size)
+t_size_t	ft_strlcat(char *dest, char *src, t_size_t size)
 {
-	size_t		i;
-	size_t		len_dest;
-	size_t		len_src;
+	t_size_t		i;
+	t_size_t		len_dest;
+	t_size_t		len_src;
 
 	len_dest = ft_strlen(dest);
 	len_src = ft_strlen(src);

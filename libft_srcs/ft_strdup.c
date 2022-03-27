@@ -6,11 +6,12 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 15:34:01 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/10 18:27:45 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:15:41 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strdup(char *src)
 {

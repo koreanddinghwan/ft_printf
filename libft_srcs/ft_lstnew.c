@@ -6,11 +6,12 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 12:48:53 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/12 12:32:23 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:12:18 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 t_list	*ft_lstnew(void	*content)
 {

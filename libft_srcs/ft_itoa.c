@@ -6,11 +6,12 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 21:31:32 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/11 12:08:30 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:10:29 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int	ft_caldigit(long n)
 {

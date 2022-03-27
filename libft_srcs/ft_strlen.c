@@ -6,15 +6,15 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 14:27:19 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/14 16:59:10 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:17:11 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *s)
+t_size_t	ft_strlen(char *s)
 {
-	size_t	size;
+	t_size_t	size;
 
 	size = 0;
 	while (s[size])

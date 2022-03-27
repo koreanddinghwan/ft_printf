@@ -6,14 +6,12 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 16:21:11 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/25 20:14:01 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:08:55 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define  LIBFT_H
-# include <stdlib.h>
-# include <unistd.h>
 
 typedef struct s_list
 {

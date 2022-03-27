@@ -6,11 +6,12 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 11:38:17 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/18 05:03:00 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/27 14:14:20 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 static void	ft_recur_nbr(long long n, int fd, int *rtn)
 {
