@@ -6,15 +6,18 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 11:35:58 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/27 14:14:12 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/29 01:54:01 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	int	i;
+
+	i = 0;
+	while (s[i])
+		write(fd, s + i, 1);
+	write(fd, "\n", 1);
 }

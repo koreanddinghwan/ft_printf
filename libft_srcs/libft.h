@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 16:21:11 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/27 14:08:55 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/29 01:51:22 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
-typedef unsigned long t_size_t;
+
+typedef unsigned long	t_size_t;
+
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
@@ -50,10 +52,7 @@ char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
-int				ft_putchar_fd(char c, int fd);
-int				ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
-int				ft_putnbr_fd(int n, int fd);
 t_list			*ft_lstnew(void	*content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
 int				ft_lstsize(t_list *lst);

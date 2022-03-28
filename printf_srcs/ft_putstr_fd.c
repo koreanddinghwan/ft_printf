@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_bonus.h                                  :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/17 23:52:09 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/19 01:38:16 by myukang          ###   ########.fr       */
+/*   Created: 2022/03/11 11:31:59 by myukang           #+#    #+#             */
+/*   Updated: 2022/03/29 01:55:12 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include "../libft_srcs/libft.h"
-# include <stdarg.h>
+#include "../includes/ft_printf.h"
+#include <unistd.h>
 
-int		ft_print_pointer(void *p);
-int		ft_putnbr_hex(int n, int big_small);
-int		ft_printf(const char *fmt, ...);
+int	ft_putstr_fd(char *s, int fd)
+{
+	int	rtn;
 
-#endif
+	rtn = 0;
+	if (s == 0)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
+	if (fd < 0)
+		return (0);
+	while (*s)
+	{
+		ft_putchar_fd(*(s++), fd);
+		rtn++;
+	}
+	return (rtn);
+}

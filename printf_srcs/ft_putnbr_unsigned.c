@@ -6,11 +6,11 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/18 03:30:10 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/27 14:14:26 by myukang          ###   ########.fr       */
+/*   Updated: 2022/03/29 01:49:11 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/ft_printf.h"
 #include <unistd.h>
 
 static void	_ft_recur_nbr(long long n, int fd, int *rtn)
@@ -35,12 +35,6 @@ int	ft_putnbr_unsigned(unsigned int n, int fd)
 
 	ln = n;
 	rtn = 0;
-	if (ln < 0)
-	{
-		ln *= -1;
-		ft_putchar_fd('-', fd);
-		rtn++;
-	}
 	_ft_recur_nbr(ln, fd, &rtn);
 	return (rtn);
 }

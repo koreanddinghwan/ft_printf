@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/11 11:29:17 by myukang           #+#    #+#             */
-/*   Updated: 2022/03/27 14:14:02 by myukang          ###   ########.fr       */
+/*   Created: 2022/03/17 23:52:09 by myukang           #+#    #+#             */
+/*   Updated: 2022/03/29 01:56:29 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <unistd.h>
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include "../libft_srcs/libft.h"
 
-int	ft_putchar_fd(char c, int fd)
-{
-	if (fd < 0)
-		return (0);
-	write(fd, &c, 1);
-	return (1);
-}
+int		ft_putstr_fd(char *s, int fd);
+int		ft_putnbr_fd(int n, int fd);
+int		ft_putchar_fd(char c, int fd);
+int		ft_print_pointer(void *p);
+int		ft_putnbr_hex(int n, int big_small);
+int		ft_printf(const char *fmt, ...);
+
+#endif
